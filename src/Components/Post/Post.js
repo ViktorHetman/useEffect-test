@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Post() {
+function Post({userId, title, body}) {
   return (
     <div>
-        <h3>Some text</h3>
+        <small>USER ID: {userId}</small>
+        <h1>{title}</h1>
+        <h3>{body}</h3>
     </div>
   )
 }
